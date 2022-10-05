@@ -252,5 +252,37 @@ for x in range(noOfLines):
     print()
 
 """
+A
+B B
+C C C
+D D D D 
+"""
+noOfLines=4
+#ascii of "A" is 65
+alpha=64
+for x in range(noOfLines):
+    alpha += 1
+    for y in range(x+1):
+
+        print(chr(alpha),end="")
+    print()
+
+
 
 """
+      A
+    A B A
+  A B C B A
+A B C D C B A
+"""
+
+noOfLines=7
+#ascii of 'A' is 65
+alpha=64
+for x in range(noOfLines):
+    for y in range(x+1):
+        if y>=noOfLines-(x+1) and y<=(noOfLines+x-1):
+            print(chr(alpha+1),end="")
+        else:
+            print(end=" ")
+    print()
